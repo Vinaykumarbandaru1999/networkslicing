@@ -65,8 +65,7 @@ Congratulations! Please take a moment to explore the Table of Contents below. En
 4. [Challenges](#4-challenges)
 5. [Conclusion](#5-conclusion)
 6. [Contribute](#6-contribute)
-7. [License](#7-license)
-8. [References](#references)
+
 
 
 # 1. Introduction
