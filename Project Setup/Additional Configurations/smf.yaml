@@ -1,0 +1,10 @@
+template:
+  sliceId: "smfslice"
+  snssais:
+    - sst: 1
+      sd: "010203"
+  dnnList:
+    - dnn: "internet"
+      ipv4:
+        enable: true
+        dns: "8.8.8.8"

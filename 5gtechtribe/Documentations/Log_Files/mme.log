@@ -1,0 +1,1083 @@
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/08 00:53:08.277: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/08 00:53:08.277: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/08 00:53:08.282: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/08 00:53:08.320: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/08 00:53:08.320: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/08 00:53:08.323: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/08 00:53:08.323: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/08 00:54:55.762: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:11:43.487: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:11:43.487: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 18:11:43.490: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/14 18:11:43.555: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/14 18:11:43.555: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/14 18:11:43.559: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/14 18:11:43.559: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/14 18:40:30.917: [app] INFO: Signal-NUM[28] received (Window changed) (../src/main.c:63)
+01/14 18:40:34.094: [app] INFO: Signal-NUM[28] received (Window changed) (../src/main.c:63)
+01/14 18:40:34.094: [app] INFO: Signal-NUM[28] received (Window changed) (../src/main.c:63)
+01/14 18:40:35.920: [app] INFO: Signal-NUM[28] received (Window changed) (../src/main.c:63)
+01/14 18:40:35.920: [app] INFO: Signal-NUM[28] received (Window changed) (../src/main.c:63)
+01/14 18:40:38.278: [app] INFO: SIGINT received (../src/main.c:53)
+01/14 18:40:38.278: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/14 18:40:38.395: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:40:50.311: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:40:50.311: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 18:40:50.315: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/14 18:40:50.380: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/14 18:40:50.380: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/14 18:40:50.380: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/14 18:40:50.381: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/14 18:40:50.479: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:42:06.950: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:42:06.950: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 18:42:06.952: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+01/14 18:42:06.984: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 18:42:06.984: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 18:42:06.984: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:06.984: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:06.984: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:07.092: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:2213)
+01/14 18:42:07.092: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-mmed(+0x559f4) [0xaaaab9a359f4]
+./install/bin/open5gs-mmed(+0x8320) [0xaaaab99e8320]
+./install/bin/open5gs-mmed(+0x76f4) [0xaaaab99e76f4]
+./install/bin/open5gs-mmed(+0x8074) [0xaaaab99e8074]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffff951e73fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff951e74cc]
+./install/bin/open5gs-mmed(+0x75f0) [0xaaaab99e75f0]
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:42:50.874: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:42:50.874: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 18:42:50.876: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+01/14 18:42:50.941: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 18:42:50.942: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 18:42:50.942: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:50.942: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:50.942: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:51.050: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:2213)
+01/14 18:42:51.050: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-mmed(+0x559f4) [0xaaaae78459f4]
+./install/bin/open5gs-mmed(+0x8320) [0xaaaae77f8320]
+./install/bin/open5gs-mmed(+0x76f4) [0xaaaae77f76f4]
+./install/bin/open5gs-mmed(+0x8074) [0xaaaae77f8074]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffff886573fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff886574cc]
+./install/bin/open5gs-mmed(+0x75f0) [0xaaaae77f75f0]
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:43:01.088: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:43:01.088: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 18:43:01.090: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+01/14 18:43:01.118: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 18:43:01.118: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 18:43:01.118: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:01.118: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:01.119: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:01.233: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:2213)
+01/14 18:43:01.233: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-mmed(+0x559f4) [0xaaaacc9859f4]
+./install/bin/open5gs-mmed(+0x8320) [0xaaaacc938320]
+./install/bin/open5gs-mmed(+0x76f4) [0xaaaacc9376f4]
+./install/bin/open5gs-mmed(+0x8074) [0xaaaacc938074]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffff9cd573fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff9cd574cc]
+./install/bin/open5gs-mmed(+0x75f0) [0xaaaacc9375f0]
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:43:49.776: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:43:49.776: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 18:43:49.778: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+01/14 18:43:49.848: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 18:43:49.848: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 18:43:49.849: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:49.849: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:49.849: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:49.958: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:2213)
+01/14 18:43:49.958: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-mmed(+0x559f4) [0xaaaac69a59f4]
+./install/bin/open5gs-mmed(+0x8320) [0xaaaac6958320]
+./install/bin/open5gs-mmed(+0x76f4) [0xaaaac69576f4]
+./install/bin/open5gs-mmed(+0x8074) [0xaaaac6958074]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffffa0a273fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffffa0a274cc]
+./install/bin/open5gs-mmed(+0x75f0) [0xaaaac69575f0]
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:44:15.217: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:44:15.217: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 18:44:15.220: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+01/14 18:44:15.254: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 18:44:15.254: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 18:44:15.254: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:44:15.254: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:44:15.254: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:44:15.365: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:2213)
+01/14 18:44:15.365: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-mmed(+0x559f4) [0xaaaae5de59f4]
+./install/bin/open5gs-mmed(+0x8320) [0xaaaae5d98320]
+./install/bin/open5gs-mmed(+0x76f4) [0xaaaae5d976f4]
+./install/bin/open5gs-mmed(+0x8074) [0xaaaae5d98074]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffffb22a73fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffffb22a74cc]
+./install/bin/open5gs-mmed(+0x75f0) [0xaaaae5d975f0]
+01/14 18:46:30.995: [app] INFO: SIGTERM received (../src/main.c:53)
+01/14 18:46:30.995: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/14 18:46:31.123: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:46:51.182: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:46:51.182: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 18:46:51.193: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/14 18:46:51.249: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/14 18:46:51.249: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/14 18:46:51.249: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/14 18:46:51.250: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/14 18:46:51.252: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 20:05:00.643: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 20:05:00.643: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 20:05:00.646: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/14 20:05:00.738: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/14 20:05:00.738: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/14 20:05:00.739: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/14 20:05:00.739: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/14 20:05:00.741: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#16): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 23:56:11.217: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 23:56:11.217: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 23:56:11.223: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/14 23:56:11.332: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/14 23:56:11.333: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/14 23:56:11.336: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/14 23:56:11.336: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/14 23:56:11.345: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#16): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 23:58:37.371: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 23:58:37.371: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 23:58:37.375: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+01/14 23:58:37.446: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 23:58:37.446: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 23:58:37.446: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 23:58:37.446: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 23:58:37.446: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 23:58:37.555: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:2213)
+01/14 23:58:37.555: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-mmed(+0x559f4) [0xaaaaae7359f4]
+./install/bin/open5gs-mmed(+0x8320) [0xaaaaae6e8320]
+./install/bin/open5gs-mmed(+0x76f4) [0xaaaaae6e76f4]
+./install/bin/open5gs-mmed(+0x8074) [0xaaaaae6e8074]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffff87a173fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87a174cc]
+./install/bin/open5gs-mmed(+0x75f0) [0xaaaaae6e75f0]
+01/14 23:58:47.239: [app] INFO: SIGTERM received (../src/main.c:53)
+01/14 23:58:47.239: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/14 23:58:47.360: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 23:58:52.304: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/14 23:58:52.304: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/14 23:58:52.307: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/14 23:58:52.379: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/14 23:58:52.379: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/14 23:58:52.379: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/14 23:58:52.380: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/14 23:58:52.382: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+01/15 00:02:24.192: [app] INFO: SIGTERM received (../src/main.c:53)
+01/15 00:02:24.192: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/15 00:02:24.327: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/15 00:02:39.213: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/15 00:02:39.213: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/15 00:02:39.220: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/15 00:02:39.328: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/15 00:02:39.328: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/15 00:02:39.328: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/15 00:02:39.329: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/15 00:02:39.331: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/17 23:52:06.599: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/17 23:52:06.599: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/17 23:52:06.625: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/17 23:52:06.775: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/17 23:52:06.775: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/17 23:52:06.777: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/17 23:52:06.777: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/17 23:52:06.779: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#16): (../lib/diameter/common/logger.c:108)
+01/18 00:08:34.899: [app] INFO: SIGTERM received (../src/main.c:53)
+01/18 00:08:34.899: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/18 00:08:35.044: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 00:11:20.874: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/18 00:11:20.874: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/18 00:11:20.879: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/18 00:11:20.975: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/18 00:11:20.975: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/18 00:11:20.976: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/18 00:11:21.004: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/18 00:11:21.011: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+01/18 00:25:11.719: [app] INFO: SIGTERM received (../src/main.c:53)
+01/18 00:25:11.720: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/18 00:25:11.859: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 00:25:19.690: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/18 00:25:19.690: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/18 00:25:19.712: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/18 00:25:19.812: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/18 00:25:19.812: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/18 00:25:19.812: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/18 00:25:19.812: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/18 00:25:19.816: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+01/18 00:29:24.409: [app] INFO: SIGTERM received (../src/main.c:53)
+01/18 00:29:24.409: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/18 00:29:24.549: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 00:29:33.875: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/18 00:29:33.875: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/18 00:29:33.879: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/18 00:29:33.971: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/18 00:29:33.971: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/18 00:29:33.971: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/18 00:29:33.971: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/18 00:29:33.974: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+01/18 00:45:19.118: [app] INFO: SIGTERM received (../src/main.c:53)
+01/18 00:45:19.118: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/18 00:45:19.248: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 00:45:46.922: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/18 00:45:46.922: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/18 00:45:46.928: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/18 00:45:47.043: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/18 00:45:47.043: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/18 00:45:47.043: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/18 00:45:47.044: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/18 00:45:47.046: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 19:37:44.657: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/18 19:37:44.657: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/18 19:37:44.663: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/18 19:37:44.787: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/18 19:37:44.787: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/18 19:37:44.788: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/18 19:37:44.788: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/18 19:37:44.809: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+01/18 22:16:02.689: [app] INFO: SIGTERM received (../src/main.c:53)
+01/18 22:16:02.690: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/18 22:16:02.831: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 22:16:08.332: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/18 22:16:08.332: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/18 22:16:08.339: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/18 22:16:08.451: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/18 22:16:08.451: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/18 22:16:08.451: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/18 22:16:08.451: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/18 22:16:08.453: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/19 22:21:38.192: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/19 22:21:38.192: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/19 22:21:38.197: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/19 22:21:38.273: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/19 22:21:38.273: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/19 22:21:38.279: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/19 22:21:38.279: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/19 22:21:38.324: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/19 22:23:43.652: [app] INFO: SIGTERM received (../src/main.c:53)
+01/19 22:23:43.652: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/19 22:23:43.775: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/19 22:23:59.012: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/19 22:23:59.012: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/19 22:23:59.014: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/19 22:23:59.064: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/19 22:23:59.064: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/19 22:23:59.064: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/19 22:23:59.065: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/19 22:23:59.067: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/19 22:24:05.238: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/19 22:24:05.238: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/19 22:24:05.240: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+01/19 22:24:05.319: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/19 22:24:05.319: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/19 22:24:05.319: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/19 22:24:05.319: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/19 22:24:05.319: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/19 22:24:05.427: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:2213)
+01/19 22:24:05.427: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-mmed(+0x559f4) [0xaaaae66559f4]
+./install/bin/open5gs-mmed(+0x8320) [0xaaaae6608320]
+./install/bin/open5gs-mmed(+0x76f4) [0xaaaae66076f4]
+./install/bin/open5gs-mmed(+0x8074) [0xaaaae6608074]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffffb6a573fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffffb6a574cc]
+./install/bin/open5gs-mmed(+0x75f0) [0xaaaae66075f0]
+01/19 22:24:08.456: [app] INFO: SIGTERM received (../src/main.c:53)
+01/19 22:24:08.456: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/19 22:24:08.583: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/19 22:24:11.685: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/19 22:24:11.685: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/19 22:24:11.695: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/19 22:24:11.740: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/19 22:24:11.740: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/19 22:24:11.740: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/19 22:24:11.741: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/19 22:24:11.742: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#16): (../lib/diameter/common/logger.c:108)
+01/19 22:24:15.415: [app] INFO: SIGTERM received (../src/main.c:53)
+01/19 22:24:15.415: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/19 22:24:15.541: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/19 22:24:47.519: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/19 22:24:47.519: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/19 22:24:47.521: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/19 22:24:47.595: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/19 22:24:47.595: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/19 22:24:47.596: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/19 22:24:47.600: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/19 22:24:47.618: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+01/19 22:36:55.492: [app] INFO: SIGTERM received (../src/main.c:53)
+01/19 22:36:55.492: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/19 22:36:55.624: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/20 09:03:42.444: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/20 09:03:42.444: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/20 09:03:42.472: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/20 09:03:42.634: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/20 09:03:42.634: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/20 09:03:42.634: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/20 09:03:42.634: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/20 09:03:42.636: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#16): (../lib/diameter/common/logger.c:108)
+01/20 22:10:34.720: [app] INFO: SIGTERM received (../src/main.c:53)
+01/20 22:10:34.725: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/20 22:10:34.848: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/20 22:10:37.713: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/20 22:10:37.713: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/20 22:10:37.717: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/20 22:10:37.849: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/20 22:10:37.849: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/20 22:10:37.849: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/20 22:10:37.849: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+01/20 22:10:37.849: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/20 23:50:30.753: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/20 23:50:30.753: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/20 23:50:30.777: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+01/20 23:50:30.864: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/20 23:50:30.864: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/20 23:50:30.864: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/20 23:50:30.864: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/20 23:50:30.864: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/20 23:50:30.973: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:2213)
+01/20 23:50:30.973: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-mmed(+0x559f4) [0xaaaae9ad59f4]
+./install/bin/open5gs-mmed(+0x8320) [0xaaaae9a88320]
+./install/bin/open5gs-mmed(+0x76f4) [0xaaaae9a876f4]
+./install/bin/open5gs-mmed(+0x8074) [0xaaaae9a88074]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffff8b2073fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff8b2074cc]
+./install/bin/open5gs-mmed(+0x75f0) [0xaaaae9a875f0]
+01/20 23:50:37.069: [app] INFO: SIGTERM received (../src/main.c:53)
+01/20 23:50:37.069: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/20 23:50:37.210: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/20 23:50:51.641: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/20 23:50:51.641: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/20 23:50:51.684: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/20 23:50:51.781: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/20 23:50:51.781: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/20 23:50:51.781: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/20 23:50:51.785: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/20 23:50:51.804: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#10): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/22 18:47:15.402: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/22 18:47:15.402: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/22 18:47:15.427: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/22 18:47:15.516: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/22 18:47:15.516: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/22 18:47:15.517: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/22 18:47:15.517: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/22 18:47:15.528: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/22 20:32:49.090: [app] INFO: SIGTERM received (../src/main.c:53)
+01/22 20:32:49.090: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/22 20:32:49.226: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/22 20:32:53.165: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/22 20:32:53.165: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/22 20:32:53.169: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/22 20:32:53.226: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/22 20:32:53.226: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/22 20:32:53.226: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/22 20:32:53.228: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/22 20:32:53.237: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/23 01:31:13.798: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 01:31:13.798: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 01:31:13.917: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 02:44:44.114: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/23 02:44:44.114: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/23 02:44:44.129: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/23 02:44:44.197: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/23 02:44:44.197: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/23 02:44:44.197: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/23 02:44:44.197: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/23 02:44:44.200: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+01/23 04:39:49.998: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 04:39:49.998: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 04:39:50.134: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 04:40:24.324: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/23 04:40:24.324: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/23 04:40:24.332: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/23 04:40:24.449: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/23 04:40:24.449: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/23 04:40:24.449: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/23 04:40:24.449: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/23 04:40:24.451: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#9): (../lib/diameter/common/logger.c:108)
+01/23 04:40:24.659: [diam] ERROR: pid:PSM/hss.localdomain in fd_psm_change_state@p_psm.c:284: 'STATE_OPEN'	-> 'STATE_CLOSED'	'hss.localdomain'
+ ((null):0)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 04:40:42.818: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/23 04:40:42.818: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/23 04:40:42.821: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+01/23 04:40:42.857: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/23 04:40:42.857: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/23 04:40:42.857: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/23 04:40:42.857: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/23 04:40:42.857: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/23 04:40:42.917: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#18): (../lib/diameter/common/logger.c:108)
+01/23 04:40:42.965: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:2213)
+01/23 04:40:42.965: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-mmed(+0x559f4) [0xaaaad9f359f4]
+./install/bin/open5gs-mmed(+0x8320) [0xaaaad9ee8320]
+./install/bin/open5gs-mmed(+0x76f4) [0xaaaad9ee76f4]
+./install/bin/open5gs-mmed(+0x8074) [0xaaaad9ee8074]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffffb8f673fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffffb8f674cc]
+./install/bin/open5gs-mmed(+0x75f0) [0xaaaad9ee75f0]
+01/23 04:40:45.746: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 04:40:45.746: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 04:40:45.870: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 04:53:57.956: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/23 04:53:57.956: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/23 04:53:57.970: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/23 04:53:58.012: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/23 04:53:58.012: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/23 04:53:58.012: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/23 04:53:58.013: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/23 04:53:58.046: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/23 21:29:25.235: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 21:29:25.237: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 21:29:25.384: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 21:30:30.582: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/23 21:30:30.582: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/23 21:30:30.584: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/23 21:30:30.702: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/23 21:30:30.702: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/23 21:30:30.702: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/23 21:30:30.702: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/23 21:30:30.703: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+01/23 22:36:42.426: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 22:36:42.427: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 22:36:42.579: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 22:57:14.038: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/23 22:57:14.038: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/23 22:57:14.046: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/23 22:57:14.110: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/23 22:57:14.110: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/23 22:57:14.110: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/23 22:57:14.110: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/23 22:57:14.141: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#9): (../lib/diameter/common/logger.c:108)
+01/23 23:30:19.561: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 23:30:19.562: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 23:30:19.700: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/24 23:58:46.311: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/24 23:58:46.311: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/24 23:58:46.327: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/24 23:58:46.405: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/24 23:58:46.405: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/24 23:58:46.406: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/24 23:58:46.406: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/24 23:58:46.408: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#16): (../lib/diameter/common/logger.c:108)
+01/25 00:09:38.745: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 00:09:38.747: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 00:09:38.879: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 00:09:49.761: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 00:09:49.761: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 00:09:49.763: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 00:09:49.857: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 00:09:49.857: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 00:09:49.857: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 00:09:49.857: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 00:09:49.863: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+01/25 00:23:27.573: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 00:23:27.573: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 00:23:27.708: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 00:25:06.622: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 00:25:06.622: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 00:25:06.625: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 00:25:06.699: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 00:25:06.699: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 00:25:06.699: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 00:25:06.700: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 00:25:06.711: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#16): (../lib/diameter/common/logger.c:108)
+01/25 00:27:06.542: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 00:27:06.543: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 00:27:06.677: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 00:27:10.004: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 00:27:10.004: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 00:27:10.008: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 00:27:10.097: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 00:27:10.097: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 00:27:10.097: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 00:27:10.097: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 00:27:10.103: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+01/25 00:28:14.139: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 00:28:14.139: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 00:28:14.261: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 00:29:06.824: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 00:29:06.824: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 00:29:06.836: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 00:29:06.896: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 00:29:06.896: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 00:29:06.897: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 00:29:06.902: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 00:29:06.911: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+01/25 03:20:14.768: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 03:20:14.768: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 03:20:14.897: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 19:30:04.351: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 19:30:04.351: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 19:30:04.357: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 19:30:04.466: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 19:30:04.466: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 19:30:04.467: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 19:30:04.467: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 19:30:04.471: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#12): (../lib/diameter/common/logger.c:108)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Received while peer state machine was in state STATE_OPEN.'
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 340
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x00 (----)
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x13F4EF4E
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x6BC80C74
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:hss.localdomain(15) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0xffff88000cd0 asso:0 sess:(nil)
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='ELECTION_LOST' (4003 (0xfa3))
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=59 f=-- val="Please answer my CER instead, you won the election."
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=23 f=-M val="hss.localdomain"
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=19 f=-M val="localdomain"
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1706211004 (0x65b2b6bc)
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Host-IP-Address'(257) l=14 f=-M val=127.0.0.8
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Vendor-Id'(266) l=12 f=-M val=0 (0x0)
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Product-Name'(269) l=20 f=-- val="freediameter"
+ ((null):0)
+01/25 19:30:04.471: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Firmware-Revision'(267) l=12 f=-- val=10500 (0x2904)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Vendor-Specific-Application-Id'(260) l=32 f=-M val=(grouped)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:            AVP: 'Auth-Application-Id'(258) l=12 f=-M val=16777216 (0x1000000)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:            AVP: 'Vendor-Id'(266) l=12 f=-M val=10415 (0x28af)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Vendor-Specific-Application-Id'(260) l=32 f=-M val=(grouped)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:            AVP: 'Auth-Application-Id'(258) l=12 f=-M val=16777251 (0x1000023)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:            AVP: 'Vendor-Id'(266) l=12 f=-M val=10415 (0x28af)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Vendor-Specific-Application-Id'(260) l=32 f=-M val=(grouped)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:            AVP: 'Auth-Application-Id'(258) l=12 f=-M val=16777265 (0x1000031)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:            AVP: 'Vendor-Id'(266) l=12 f=-M val=10415 (0x28af)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Supported-Vendor-Id'(265) l=12 f=-M val=5535 (0x159f)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Supported-Vendor-Id'(265) l=12 f=-M val=10415 (0x28af)
+ ((null):0)
+01/25 19:30:04.472: [diam] ERROR: pid:PSM/hss.localdomain in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Supported-Vendor-Id'(265) l=12 f=-M val=13019 (0x32db)
+ ((null):0)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 19:38:15.777: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 19:38:15.777: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 19:38:15.781: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+01/25 19:38:15.818: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/25 19:38:15.818: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/25 19:38:15.818: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/25 19:38:15.818: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/25 19:38:15.818: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/25 19:38:15.927: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:2213)
+01/25 19:38:15.927: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-mmed(+0x559f4) [0xaaaae8f459f4]
+./install/bin/open5gs-mmed(+0x8320) [0xaaaae8ef8320]
+./install/bin/open5gs-mmed(+0x76f4) [0xaaaae8ef76f4]
+./install/bin/open5gs-mmed(+0x8074) [0xaaaae8ef8074]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffff9f2573fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff9f2574cc]
+./install/bin/open5gs-mmed(+0x75f0) [0xaaaae8ef75f0]
+01/25 19:38:32.202: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 19:38:32.202: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 19:38:32.330: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 19:38:39.870: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 19:38:39.870: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 19:38:39.879: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 19:38:40.122: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 19:38:40.122: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 19:38:40.122: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 19:38:40.122: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 19:38:40.124: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#16): (../lib/diameter/common/logger.c:108)
+01/25 20:01:18.756: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 20:01:18.757: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 20:01:18.888: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 20:01:50.496: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 20:01:50.496: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 20:01:50.502: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 20:01:50.554: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 20:01:50.554: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 20:01:50.554: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 20:01:50.556: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 20:01:50.635: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/25 20:18:17.237: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 20:18:17.237: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 20:18:17.361: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 20:18:20.818: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 20:18:20.818: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 20:18:20.822: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 20:18:20.864: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 20:18:20.864: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 20:18:20.864: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 20:18:20.871: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 20:18:20.907: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#13): (../lib/diameter/common/logger.c:108)
+01/25 21:05:56.490: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 21:05:56.490: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 21:05:56.607: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 21:06:00.279: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 21:06:00.279: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 21:06:00.300: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 21:06:00.390: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 21:06:00.390: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 21:06:00.391: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 21:06:00.398: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 21:06:00.401: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/25 21:19:57.995: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 21:19:58.009: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 21:19:58.145: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 21:20:00.345: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 21:20:00.345: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 21:20:00.350: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 21:20:00.414: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 21:20:00.414: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 21:20:00.414: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 21:20:00.415: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 21:20:00.423: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+01/25 21:30:13.386: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 21:30:13.386: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 21:30:13.530: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 21:30:18.707: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 21:30:18.707: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 21:30:18.728: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 21:30:18.834: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 21:30:18.834: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 21:30:18.834: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 21:30:18.834: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 21:30:18.836: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+01/25 22:13:46.214: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 22:13:46.214: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 22:13:46.338: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 22:13:49.035: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/25 22:13:49.035: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/25 22:13:49.064: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/25 22:13:49.162: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/25 22:13:49.162: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#11): (../lib/diameter/common/logger.c:108)
+01/25 22:13:49.162: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/25 22:13:49.162: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/25 22:13:49.163: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/25 23:06:40.306: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 23:06:40.306: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 23:06:40.433: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 02:36:03.732: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/26 02:36:03.732: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/26 02:36:03.736: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/26 02:36:03.871: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/26 02:36:03.871: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/26 02:36:03.872: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/26 02:36:03.872: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/26 02:36:03.879: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#16): (../lib/diameter/common/logger.c:108)
+01/26 02:37:57.023: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 02:37:57.023: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 02:37:57.145: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 02:38:00.175: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/26 02:38:00.175: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/26 02:38:00.178: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/26 02:38:00.255: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/26 02:38:00.255: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/26 02:38:00.255: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/26 02:38:00.256: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/26 02:38:00.257: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#16): (../lib/diameter/common/logger.c:108)
+01/26 02:39:51.580: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 02:39:51.580: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 02:39:51.711: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 02:40:18.647: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/26 02:40:18.647: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/26 02:40:18.657: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/26 02:40:18.786: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/26 02:40:18.786: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/26 02:40:18.786: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/26 02:40:18.786: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/26 02:40:18.788: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+01/26 02:41:24.831: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 02:41:24.831: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 02:41:24.945: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 02:51:45.605: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/26 02:51:45.605: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/26 02:51:45.621: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/26 02:51:45.678: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/26 02:51:45.678: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/26 02:51:45.678: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/26 02:51:45.681: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/26 02:51:45.708: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+01/26 02:54:57.325: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 02:54:57.325: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 02:54:57.448: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 02:55:02.384: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/26 02:55:02.384: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/26 02:55:02.388: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/26 02:55:02.447: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/26 02:55:02.447: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/26 02:55:02.447: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/26 02:55:02.448: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/26 02:55:02.504: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+01/26 03:14:47.146: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 03:14:47.146: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 03:14:47.267: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 03:14:56.267: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/26 03:14:56.267: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/26 03:14:56.274: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/26 03:14:56.351: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/26 03:14:56.351: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/26 03:14:56.353: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/26 03:14:56.358: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/26 03:14:56.361: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+01/26 04:10:29.951: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 04:10:29.952: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 04:10:30.075: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 20:22:00.567: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/26 20:22:00.567: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/26 20:22:00.594: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/26 20:22:00.662: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/26 20:22:00.662: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/26 20:22:00.663: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/26 20:22:00.663: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/26 20:22:00.664: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+01/26 20:22:34.447: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 20:22:34.447: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 20:22:34.570: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 20:22:39.466: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/26 20:22:39.466: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/26 20:22:39.469: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/26 20:22:39.536: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/26 20:22:39.536: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/26 20:22:39.536: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/26 20:22:39.537: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/26 20:22:39.560: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/28 21:03:05.155: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+01/28 21:03:05.155: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+01/28 21:03:05.174: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+01/28 21:03:05.272: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+01/28 21:03:05.272: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+01/28 21:03:05.273: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+01/28 21:03:05.273: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+01/28 21:03:05.274: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/02 23:28:28.676: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+02/02 23:28:28.676: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+02/02 23:28:28.680: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+02/02 23:28:28.794: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/02 23:28:28.795: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+02/02 23:28:28.795: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+02/02 23:28:28.796: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+02/02 23:28:28.823: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+02/02 23:32:03.023: [app] INFO: SIGTERM received (../src/main.c:53)
+02/02 23:32:03.024: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/02 23:32:03.158: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/02 23:32:06.534: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+02/02 23:32:06.547: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+02/02 23:32:06.553: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+02/02 23:32:06.629: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/02 23:32:06.629: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+02/02 23:32:06.629: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+02/02 23:32:06.629: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+02/02 23:32:06.631: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/03 01:19:25.670: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+02/03 01:19:25.670: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+02/03 01:19:25.674: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:282)
+02/03 01:19:25.755: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+02/03 01:19:25.756: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+02/03 01:19:25.756: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+02/03 01:19:25.756: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+02/03 01:19:25.756: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+02/03 01:19:25.868: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:2213)
+02/03 01:19:25.868: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-mmed(+0x559f4) [0xaaaae05a59f4]
+./install/bin/open5gs-mmed(+0x8320) [0xaaaae0558320]
+./install/bin/open5gs-mmed(+0x76f4) [0xaaaae05576f4]
+./install/bin/open5gs-mmed(+0x8074) [0xaaaae0558074]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffffb59b73fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffffb59b74cc]
+./install/bin/open5gs-mmed(+0x75f0) [0xaaaae05575f0]
+02/03 01:19:32.240: [app] INFO: SIGTERM received (../src/main.c:53)
+02/03 01:19:32.241: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/03 01:19:32.385: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/03 01:19:35.761: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+02/03 01:19:35.761: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+02/03 01:19:35.767: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+02/03 01:19:35.849: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/03 01:19:35.849: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+02/03 01:19:35.849: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+02/03 01:19:35.850: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+02/03 01:19:35.906: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+02/03 01:53:43.000: [app] INFO: SIGTERM received (../src/main.c:53)
+02/03 01:53:43.000: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/03 01:53:43.124: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/04 16:22:12.089: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+02/04 16:22:12.089: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+02/04 16:22:12.108: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+02/04 16:22:12.202: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/04 16:22:12.202: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+02/04 16:22:12.203: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+02/04 16:22:12.204: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+02/04 16:22:12.221: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/08 18:46:31.166: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+02/08 18:46:31.166: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+02/08 18:46:31.169: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+02/08 18:46:31.257: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/08 18:46:31.257: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+02/08 18:46:31.258: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+02/08 18:46:31.258: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+02/08 18:46:31.260: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+02/08 18:51:01.737: [app] INFO: SIGTERM received (../src/main.c:53)
+02/08 18:51:01.737: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/08 18:51:01.868: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/08 18:51:04.514: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+02/08 18:51:04.514: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+02/08 18:51:04.519: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+02/08 18:51:04.588: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/08 18:51:04.588: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+02/08 18:51:04.588: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+02/08 18:51:04.589: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+02/08 18:51:04.590: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+02/08 18:52:42.713: [app] INFO: SIGTERM received (../src/main.c:53)
+02/08 18:52:42.713: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/08 18:52:42.835: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/08 18:52:48.488: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+02/08 18:52:48.488: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+02/08 18:52:48.491: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+02/08 18:52:48.562: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/08 18:52:48.562: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+02/08 18:52:48.562: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+02/08 18:52:48.562: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+02/08 18:52:48.586: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+02/08 19:04:18.558: [app] INFO: SIGTERM received (../src/main.c:53)
+02/08 19:04:18.558: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/08 19:04:18.685: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/12 07:57:06.827: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+02/12 07:57:06.827: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+02/12 07:57:06.832: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+02/12 07:57:06.938: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/12 07:57:06.938: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+02/12 07:57:06.939: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+02/12 07:57:06.939: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+02/12 07:57:06.953: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+02/12 07:57:11.384: [app] INFO: SIGTERM received (../src/main.c:53)
+02/12 07:57:11.384: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/12 07:57:11.506: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/12 07:57:16.292: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:130)
+02/12 07:57:16.292: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:133)
+02/12 07:57:16.294: [metrics] INFO: metrics_server() [http://127.0.0.2]:9090 (../lib/metrics/prometheus/context.c:299)
+02/12 07:57:16.350: [gtp] INFO: gtp_server() [127.0.0.2]:2123 (../lib/gtp/path.c:30)
+02/12 07:57:16.350: [gtp] INFO: gtp_connect() [127.0.0.3]:2123 (../lib/gtp/path.c:60)
+02/12 07:57:16.350: [mme] INFO: s1ap_server() [127.0.0.2]:36412 (../src/mme/s1ap-sctp.c:62)
+02/12 07:57:16.351: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+02/12 07:57:16.354: [diam] INFO: CONNECTED TO 'hss.localdomain' (SCTP,soc#17): (../lib/diameter/common/logger.c:108)
+02/12 07:57:58.971: [app] INFO: SIGTERM received (../src/main.c:53)
+02/12 07:57:58.971: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/12 07:57:59.115: [sctp] INFO: MME terminate...done (../src/mme/app-init.c:42)

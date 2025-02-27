@@ -1,0 +1,27 @@
+    1  sudo apt-get install wireshark
+    2  ip add
+    3  ping 192.168.100.5
+    4  sudo apt update 
+    5  apt list --upgradable
+    6  sudo apt install make g++ libsctp-dev lksctp-tools
+    7  git clone https://github.com/aligungr/UERANSIM
+    8  sudo apt install git
+    9  git clone https://github.com/aligungr/UERANSIM
+   10  cd UERANSIM
+   11  make
+   12  cd build/
+   13  ls -lh
+   14  sudo apt update
+   15  sudo apt install cmake
+   16  make
+   17  cd build/
+   18  cd ..
+   19  cd build/
+   20  ls -lh
+   21  ./nr-ue
+   22  cd ..
+   23  make
+   24  ster
+   25  master
+   26  history
+   27  history > UESIMRan_Commands.txt

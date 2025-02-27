@@ -1,0 +1,16 @@
+subscribers:
+  - supi: "uesimran1"
+    ki: "00112233445566778899AABBCCDDEEFF"
+    opc: "00112233445566778899AABBCCDDEEFF"
+    amf: "0001"
+    sqn: "0000000000000000"
+    plmnId: "20893"
+    sms: true
+
+  - supi: "uesimran2"
+    ki: "112233445566778899AABBCCDDEEFF00"
+    opc: "112233445566778899AABBCCDDEEFF00"
+    amf: "0001"
+    sqn: "0000000000000000"
+    plmnId: "20893"
+    sms: true

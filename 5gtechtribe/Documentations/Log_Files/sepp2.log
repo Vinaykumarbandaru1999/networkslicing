@@ -1,0 +1,15 @@
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/15 00:10:29.929: [app] INFO: Configuration: './install/etc/open5gs/sepp2.yaml' (../lib/app/ogs-init.c:130)
+01/15 00:10:29.929: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/sepp2.log' (../lib/app/ogs-init.c:133)
+01/15 00:10:29.932: [sbi] INFO: nghttp2_server() [http://127.0.2.250]:7777 (../lib/sbi/nghttp2-server.c:414)
+01/15 00:10:29.939: [sbi] INFO: nghttp2_server(n32f) [https://127.0.2.252]:7777 (../lib/sbi/nghttp2-server.c:414)
+01/15 00:10:29.942: [sbi] INFO: nghttp2_server(sepp) [https://127.0.2.251]:7777 (../lib/sbi/nghttp2-server.c:414)
+01/15 00:10:29.942: [app] INFO: SEPP initialize...done (../src/sepp/app.c:31)
+01/15 00:10:29.945: [sbi] INFO: [7e0cebba-b33a-41ee-b201-f3d6320dee25] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:221)
+01/15 00:10:29.945: [sbi] WARNING: [7] Failed to connect to sepp1.localdomain port 7777 after 0 ms: Connection refused (../lib/sbi/client.c:698)
+01/15 00:10:29.945: [sbi] WARNING: ogs_sbi_client_handler() failed [-1] (../lib/sbi/path.c:62)
+01/15 00:10:37.561: [app] INFO: SIGINT received (../src/main.c:53)
+01/15 00:10:37.561: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/15 00:10:37.561: [sbi] INFO: [7e0cebba-b33a-41ee-b201-f3d6320dee25] NF de-registered (../lib/sbi/nf-sm.c:248)
+01/15 00:10:37.563: [app] INFO: SEPP terminate...done (../src/sepp/app.c:39)

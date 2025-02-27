@@ -1,0 +1,809 @@
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/08 00:54:55.703: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/08 00:54:55.703: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/08 00:54:55.707: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/08 00:54:55.759: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/08 00:54:55.762: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:40:50.392: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:40:50.392: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/14 18:40:50.395: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/14 18:40:50.477: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/14 18:40:50.479: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:42:06.925: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:42:06.925: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/14 18:42:06.929: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/14 18:42:06.975: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 18:42:06.975: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 18:42:06.975: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:06.975: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:06.975: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:07.089: [hss] FATAL: hss_fd_init: Assertion `rv == 0' failed. (../src/hss/hss-fd-path.c:41)
+01/14 18:42:07.089: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-hssd(+0x1c21c) [0xaaaacbbac21c]
+./install/bin/open5gs-hssd(+0x7178) [0xaaaacbb97178]
+./install/bin/open5gs-hssd(+0x6624) [0xaaaacbb96624]
+./install/bin/open5gs-hssd(+0x6fa0) [0xaaaacbb96fa0]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffffa97f73fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffffa97f74cc]
+./install/bin/open5gs-hssd(+0x6530) [0xaaaacbb96530]
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:42:50.866: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:42:50.866: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/14 18:42:50.868: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/14 18:42:50.933: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 18:42:50.933: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 18:42:50.933: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:50.933: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:50.933: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:42:51.042: [hss] FATAL: hss_fd_init: Assertion `rv == 0' failed. (../src/hss/hss-fd-path.c:41)
+01/14 18:42:51.042: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-hssd(+0x1c21c) [0xaaaad379c21c]
+./install/bin/open5gs-hssd(+0x7178) [0xaaaad3787178]
+./install/bin/open5gs-hssd(+0x6624) [0xaaaad3786624]
+./install/bin/open5gs-hssd(+0x6fa0) [0xaaaad3786fa0]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffffb32373fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffffb32374cc]
+./install/bin/open5gs-hssd(+0x6530) [0xaaaad3786530]
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:43:01.087: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:43:01.087: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/14 18:43:01.090: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/14 18:43:01.142: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 18:43:01.142: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 18:43:01.142: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:01.142: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:01.142: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:01.251: [hss] FATAL: hss_fd_init: Assertion `rv == 0' failed. (../src/hss/hss-fd-path.c:41)
+01/14 18:43:01.251: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-hssd(+0x1c21c) [0xaaaada4ec21c]
+./install/bin/open5gs-hssd(+0x7178) [0xaaaada4d7178]
+./install/bin/open5gs-hssd(+0x6624) [0xaaaada4d6624]
+./install/bin/open5gs-hssd(+0x6fa0) [0xaaaada4d6fa0]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffffbc2373fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffffbc2374cc]
+./install/bin/open5gs-hssd(+0x6530) [0xaaaada4d6530]
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:43:49.778: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:43:49.778: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/14 18:43:49.781: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/14 18:43:49.820: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 18:43:49.820: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 18:43:49.820: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:49.820: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:49.820: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:43:49.936: [hss] FATAL: hss_fd_init: Assertion `rv == 0' failed. (../src/hss/hss-fd-path.c:41)
+01/14 18:43:49.936: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-hssd(+0x1c21c) [0xaaaad1a3c21c]
+./install/bin/open5gs-hssd(+0x7178) [0xaaaad1a27178]
+./install/bin/open5gs-hssd(+0x6624) [0xaaaad1a26624]
+./install/bin/open5gs-hssd(+0x6fa0) [0xaaaad1a26fa0]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffffa8bd73fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffffa8bd74cc]
+./install/bin/open5gs-hssd(+0x6530) [0xaaaad1a26530]
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:44:15.238: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:44:15.238: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/14 18:44:15.250: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/14 18:44:15.282: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 18:44:15.282: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 18:44:15.282: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:44:15.282: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:44:15.282: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 18:44:15.392: [hss] FATAL: hss_fd_init: Assertion `rv == 0' failed. (../src/hss/hss-fd-path.c:41)
+01/14 18:44:15.392: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-hssd(+0x1c21c) [0xaaaad961c21c]
+./install/bin/open5gs-hssd(+0x7178) [0xaaaad9607178]
+./install/bin/open5gs-hssd(+0x6624) [0xaaaad9606624]
+./install/bin/open5gs-hssd(+0x6fa0) [0xaaaad9606fa0]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffffb74973fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffffb74974cc]
+./install/bin/open5gs-hssd(+0x6530) [0xaaaad9606530]
+01/14 18:46:30.996: [app] INFO: SIGTERM received (../src/main.c:53)
+01/14 18:46:30.996: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/14 18:46:31.123: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 18:46:51.168: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/14 18:46:51.168: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/14 18:46:51.192: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/14 18:46:51.240: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/14 18:46:51.252: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#12): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 20:05:00.665: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/14 20:05:00.665: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/14 20:05:00.669: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/14 20:05:00.728: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/14 20:05:00.741: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#12): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 23:56:11.248: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/14 23:56:11.248: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/14 23:56:11.254: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/14 23:56:11.335: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/14 23:56:11.344: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 23:58:37.379: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/14 23:58:37.379: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/14 23:58:37.380: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/14 23:58:37.437: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/14 23:58:37.437: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/14 23:58:37.437: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 23:58:37.437: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/14 23:58:37.437: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/14 23:58:37.548: [hss] FATAL: hss_fd_init: Assertion `rv == 0' failed. (../src/hss/hss-fd-path.c:41)
+01/14 23:58:37.548: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-hssd(+0x1c21c) [0xaaaad901c21c]
+./install/bin/open5gs-hssd(+0x7178) [0xaaaad9007178]
+./install/bin/open5gs-hssd(+0x6624) [0xaaaad9006624]
+./install/bin/open5gs-hssd(+0x6fa0) [0xaaaad9006fa0]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffff9b8373fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff9b8374cc]
+./install/bin/open5gs-hssd(+0x6530) [0xaaaad9006530]
+01/14 23:58:47.242: [app] INFO: SIGTERM received (../src/main.c:53)
+01/14 23:58:47.242: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/14 23:58:47.361: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/14 23:58:52.312: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/14 23:58:52.312: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/14 23:58:52.314: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/14 23:58:52.375: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/14 23:58:52.381: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#13): (../lib/diameter/common/logger.c:108)
+01/15 00:02:24.192: [app] INFO: SIGTERM received (../src/main.c:53)
+01/15 00:02:24.192: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/15 00:02:24.319: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/15 00:02:39.211: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/15 00:02:39.211: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/15 00:02:39.234: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/15 00:02:39.309: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/15 00:02:39.330: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#12): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/17 23:52:06.614: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/17 23:52:06.614: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/17 23:52:06.618: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/17 23:52:06.717: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/17 23:52:06.778: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+01/18 00:08:34.899: [app] INFO: SIGTERM received (../src/main.c:53)
+01/18 00:08:34.899: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/18 00:08:35.043: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 00:11:20.903: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/18 00:11:20.904: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/18 00:11:20.907: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/18 00:11:21.009: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/18 00:11:21.012: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/18 00:25:11.720: [app] INFO: SIGTERM received (../src/main.c:53)
+01/18 00:25:11.720: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/18 00:25:11.853: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 00:25:19.689: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/18 00:25:19.689: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/18 00:25:19.706: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/18 00:25:19.750: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/18 00:25:19.815: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#11): (../lib/diameter/common/logger.c:108)
+01/18 00:29:24.409: [app] INFO: SIGTERM received (../src/main.c:53)
+01/18 00:29:24.409: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/18 00:29:24.545: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 00:29:33.881: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/18 00:29:33.881: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/18 00:29:33.886: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/18 00:29:33.944: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/18 00:29:33.973: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+01/18 00:45:19.115: [app] INFO: SIGTERM received (../src/main.c:53)
+01/18 00:45:19.115: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/18 00:45:19.247: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 00:45:46.933: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/18 00:45:46.933: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/18 00:45:46.940: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/18 00:45:47.021: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/18 00:45:47.046: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#11): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 19:37:44.672: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/18 19:37:44.672: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/18 19:37:44.674: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/18 19:37:44.807: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/18 19:37:44.809: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/18 22:16:02.689: [app] INFO: SIGTERM received (../src/main.c:53)
+01/18 22:16:02.689: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/18 22:16:02.841: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/18 22:16:08.349: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/18 22:16:08.349: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/18 22:16:08.350: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/18 22:16:08.397: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/18 22:16:08.453: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#11): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/19 22:21:38.236: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/19 22:21:38.236: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/19 22:21:38.240: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/19 22:21:38.315: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/19 22:21:38.324: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/19 22:23:43.653: [app] INFO: SIGTERM received (../src/main.c:53)
+01/19 22:23:43.653: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/19 22:23:43.779: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/19 22:23:59.015: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/19 22:23:59.015: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/19 22:23:59.018: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/19 22:23:59.060: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/19 22:23:59.067: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#12): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/19 22:24:05.227: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/19 22:24:05.227: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/19 22:24:05.246: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/19 22:24:05.287: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/19 22:24:05.287: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/19 22:24:05.287: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/19 22:24:05.287: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/19 22:24:05.287: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/19 22:24:05.396: [hss] FATAL: hss_fd_init: Assertion `rv == 0' failed. (../src/hss/hss-fd-path.c:41)
+01/19 22:24:05.396: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-hssd(+0x1c21c) [0xaaaac2a3c21c]
+./install/bin/open5gs-hssd(+0x7178) [0xaaaac2a27178]
+./install/bin/open5gs-hssd(+0x6624) [0xaaaac2a26624]
+./install/bin/open5gs-hssd(+0x6fa0) [0xaaaac2a26fa0]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffff9ce773fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff9ce774cc]
+./install/bin/open5gs-hssd(+0x6530) [0xaaaac2a26530]
+01/19 22:24:08.457: [app] INFO: SIGTERM received (../src/main.c:53)
+01/19 22:24:08.457: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/19 22:24:08.579: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/19 22:24:11.667: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/19 22:24:11.667: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/19 22:24:11.669: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/19 22:24:11.705: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/19 22:24:11.742: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#12): (../lib/diameter/common/logger.c:108)
+01/19 22:24:15.415: [app] INFO: SIGTERM received (../src/main.c:53)
+01/19 22:24:15.415: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/19 22:24:15.542: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/19 22:24:47.518: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/19 22:24:47.518: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/19 22:24:47.519: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/19 22:24:47.611: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/19 22:24:47.618: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+01/19 22:36:55.491: [app] INFO: SIGTERM received (../src/main.c:53)
+01/19 22:36:55.491: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/19 22:36:55.633: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/20 09:03:42.424: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/20 09:03:42.424: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/20 09:03:42.426: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/20 09:03:42.479: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/20 09:03:42.635: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#9): (../lib/diameter/common/logger.c:108)
+01/20 22:10:34.720: [app] INFO: SIGTERM received (../src/main.c:53)
+01/20 22:10:34.720: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/20 22:10:34.839: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/20 22:10:37.733: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/20 22:10:37.733: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/20 22:10:37.735: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/20 22:10:37.841: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/20 22:10:37.849: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/20 23:50:30.755: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/20 23:50:30.756: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/20 23:50:30.761: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/20 23:50:30.814: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/20 23:50:30.814: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/20 23:50:30.815: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/20 23:50:30.815: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/20 23:50:30.815: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/20 23:50:30.924: [hss] FATAL: hss_fd_init: Assertion `rv == 0' failed. (../src/hss/hss-fd-path.c:41)
+01/20 23:50:30.924: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-hssd(+0x1c21c) [0xaaaad0e4c21c]
+./install/bin/open5gs-hssd(+0x7178) [0xaaaad0e37178]
+./install/bin/open5gs-hssd(+0x6624) [0xaaaad0e36624]
+./install/bin/open5gs-hssd(+0x6fa0) [0xaaaad0e36fa0]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffff9a0973fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff9a0974cc]
+./install/bin/open5gs-hssd(+0x6530) [0xaaaad0e36530]
+01/20 23:50:37.069: [app] INFO: SIGTERM received (../src/main.c:53)
+01/20 23:50:37.069: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/20 23:50:37.223: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/20 23:50:51.682: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/20 23:50:51.682: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/20 23:50:51.687: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/20 23:50:51.802: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/20 23:50:51.805: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/22 18:47:15.428: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/22 18:47:15.428: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/22 18:47:15.434: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/22 18:47:15.526: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/22 18:47:15.528: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/22 20:32:49.090: [app] INFO: SIGTERM received (../src/main.c:53)
+01/22 20:32:49.090: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/22 20:32:49.218: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/22 20:32:53.164: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/22 20:32:53.164: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/22 20:32:53.167: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/22 20:32:53.240: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/22 20:32:53.241: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/23 01:31:13.803: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 01:31:13.809: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 01:31:13.945: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 02:44:44.114: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/23 02:44:44.114: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/23 02:44:44.117: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/23 02:44:44.164: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/23 02:44:44.199: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#9): (../lib/diameter/common/logger.c:108)
+01/23 04:39:49.998: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 04:39:49.998: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 04:39:50.135: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 04:40:24.330: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/23 04:40:24.330: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/23 04:40:24.337: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/23 04:40:24.448: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/23 04:40:24.452: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/23 04:40:24.457: [diam] ERROR: pid:PSM/mme.localdomain in fd_p_ce_handle_newCER@p_ce.c:1138: mme.localdomain: Rejecting new connection attempt while our state machine is in state 'STATE_OPEN'
+ ((null):0)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 04:40:42.816: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/23 04:40:42.816: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/23 04:40:42.825: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/23 04:40:42.915: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/23 04:40:42.920: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+01/23 04:40:45.747: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 04:40:45.747: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 04:40:45.870: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 04:53:57.961: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/23 04:53:57.961: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/23 04:53:57.972: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/23 04:53:58.047: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/23 04:53:58.049: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/23 21:29:25.238: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 21:29:25.238: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 21:29:25.363: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 21:30:30.592: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/23 21:30:30.592: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/23 21:30:30.595: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/23 21:30:30.655: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/23 21:30:30.703: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#9): (../lib/diameter/common/logger.c:108)
+01/23 22:36:42.426: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 22:36:42.426: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 22:36:42.577: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/23 22:57:14.041: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/23 22:57:14.041: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/23 22:57:14.062: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/23 22:57:14.139: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/23 22:57:14.141: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/23 23:30:19.561: [app] INFO: SIGTERM received (../src/main.c:53)
+01/23 23:30:19.561: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/23 23:30:19.704: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/24 23:58:46.299: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/24 23:58:46.300: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/24 23:58:46.302: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/24 23:58:46.397: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/24 23:58:46.407: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+01/25 00:09:38.754: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 00:09:38.755: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 00:09:38.881: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 00:09:49.771: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 00:09:49.771: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 00:09:49.775: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 00:09:49.857: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 00:09:49.863: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+01/25 00:23:27.574: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 00:23:27.575: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 00:23:27.709: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 00:25:06.631: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 00:25:06.631: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 00:25:06.633: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 00:25:06.695: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 00:25:06.710: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#11): (../lib/diameter/common/logger.c:108)
+01/25 00:27:06.542: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 00:27:06.542: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 00:27:06.678: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 00:27:10.009: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 00:27:10.009: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 00:27:10.014: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 00:27:10.082: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 00:27:10.102: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#12): (../lib/diameter/common/logger.c:108)
+01/25 00:28:14.138: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 00:28:14.140: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 00:28:14.261: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 00:29:06.842: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 00:29:06.842: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 00:29:06.846: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 00:29:06.910: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 00:29:06.910: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+01/25 03:20:14.770: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 03:20:14.770: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 03:20:14.900: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 19:30:04.350: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 19:30:04.350: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 19:30:04.357: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 19:30:04.470: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 19:30:04.471: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 19:38:15.778: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 19:38:15.778: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 19:38:15.780: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 19:38:15.839: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+01/25 19:38:15.839: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+01/25 19:38:15.839: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+01/25 19:38:15.839: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+01/25 19:38:15.839: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+01/25 19:38:15.947: [hss] FATAL: hss_fd_init: Assertion `rv == 0' failed. (../src/hss/hss-fd-path.c:41)
+01/25 19:38:15.948: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-hssd(+0x1c21c) [0xaaaabbbfc21c]
+./install/bin/open5gs-hssd(+0x7178) [0xaaaabbbe7178]
+./install/bin/open5gs-hssd(+0x6624) [0xaaaabbbe6624]
+./install/bin/open5gs-hssd(+0x6fa0) [0xaaaabbbe6fa0]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffffab9073fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffffab9074cc]
+./install/bin/open5gs-hssd(+0x6530) [0xaaaabbbe6530]
+01/25 19:38:32.202: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 19:38:32.202: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 19:38:32.338: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 19:38:39.887: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 19:38:39.887: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 19:38:39.888: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 19:38:39.950: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 19:38:40.123: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#12): (../lib/diameter/common/logger.c:108)
+01/25 20:01:18.760: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 20:01:18.761: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 20:01:18.890: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 20:01:50.512: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 20:01:50.512: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 20:01:50.521: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 20:01:50.633: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 20:01:50.636: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/25 20:18:17.237: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 20:18:17.237: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 20:18:17.371: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 20:18:20.823: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 20:18:20.823: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 20:18:20.825: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 20:18:20.896: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 20:18:20.907: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/25 21:05:56.502: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 21:05:56.502: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 21:05:56.635: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 21:06:00.300: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 21:06:00.300: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 21:06:00.320: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 21:06:00.399: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 21:06:00.401: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+01/25 21:19:57.991: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 21:19:57.991: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 21:19:58.141: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 21:20:00.372: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 21:20:00.372: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 21:20:00.375: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 21:20:00.411: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 21:20:00.423: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+01/25 21:30:13.385: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 21:30:13.386: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 21:30:13.533: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 21:30:18.731: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 21:30:18.731: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 21:30:18.748: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 21:30:18.797: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 21:30:18.836: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#11): (../lib/diameter/common/logger.c:108)
+01/25 22:13:46.213: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 22:13:46.214: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 22:13:46.357: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/25 22:13:49.086: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/25 22:13:49.086: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/25 22:13:49.089: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/25 22:13:49.156: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/25 22:13:49.163: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/25 23:06:40.305: [app] INFO: SIGTERM received (../src/main.c:53)
+01/25 23:06:40.305: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/25 23:06:40.443: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 02:36:03.713: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/26 02:36:03.713: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/26 02:36:03.722: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/26 02:36:03.840: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/26 02:36:03.878: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#12): (../lib/diameter/common/logger.c:108)
+01/26 02:37:57.027: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 02:37:57.027: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 02:37:57.147: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 02:38:00.182: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/26 02:38:00.182: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/26 02:38:00.184: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/26 02:38:00.245: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/26 02:38:00.256: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#13): (../lib/diameter/common/logger.c:108)
+01/26 02:39:51.579: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 02:39:51.579: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 02:39:51.706: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 02:40:18.648: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/26 02:40:18.648: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/26 02:40:18.658: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/26 02:40:18.724: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/26 02:40:18.788: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#12): (../lib/diameter/common/logger.c:108)
+01/26 02:41:24.831: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 02:41:24.832: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 02:41:24.959: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 02:51:45.639: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/26 02:51:45.639: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/26 02:51:45.641: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/26 02:51:45.693: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/26 02:51:45.709: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/26 02:54:57.325: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 02:54:57.325: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 02:54:57.449: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 02:55:02.397: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/26 02:55:02.397: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/26 02:55:02.414: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/26 02:55:02.500: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/26 02:55:02.504: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/26 03:14:47.147: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 03:14:47.148: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 03:14:47.273: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 03:14:56.270: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/26 03:14:56.270: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/26 03:14:56.291: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/26 03:14:56.358: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/26 03:14:56.361: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#11): (../lib/diameter/common/logger.c:108)
+01/26 04:10:29.953: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 04:10:29.953: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 04:10:30.077: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 20:22:00.538: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/26 20:22:00.538: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/26 20:22:00.547: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/26 20:22:00.660: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/26 20:22:00.664: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+01/26 20:22:34.447: [app] INFO: SIGTERM received (../src/main.c:53)
+01/26 20:22:34.447: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+01/26 20:22:34.572: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/26 20:22:39.474: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/26 20:22:39.474: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/26 20:22:39.487: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/26 20:22:39.558: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/26 20:22:39.561: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+01/28 21:03:05.165: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+01/28 21:03:05.165: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+01/28 21:03:05.174: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+01/28 21:03:05.257: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+01/28 21:03:05.274: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/02 23:28:28.698: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+02/02 23:28:28.698: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+02/02 23:28:28.706: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/02 23:28:28.821: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+02/02 23:28:28.823: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+02/02 23:32:03.022: [app] INFO: SIGTERM received (../src/main.c:53)
+02/02 23:32:03.022: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/02 23:32:03.154: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/02 23:32:06.521: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+02/02 23:32:06.521: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+02/02 23:32:06.523: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/02 23:32:06.575: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+02/02 23:32:06.631: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/03 01:19:25.701: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+02/03 01:19:25.701: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+02/03 01:19:25.702: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/03 01:19:25.760: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+02/03 01:19:25.760: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+02/03 01:19:25.760: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+02/03 01:19:25.760: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+02/03 01:19:25.760: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+02/03 01:19:25.868: [hss] FATAL: hss_fd_init: Assertion `rv == 0' failed. (../src/hss/hss-fd-path.c:41)
+02/03 01:19:25.868: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-hssd(+0x1c21c) [0xaaaab83ec21c]
+./install/bin/open5gs-hssd(+0x7178) [0xaaaab83d7178]
+./install/bin/open5gs-hssd(+0x6624) [0xaaaab83d6624]
+./install/bin/open5gs-hssd(+0x6fa0) [0xaaaab83d6fa0]
+/lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffff82e373fc]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff82e374cc]
+./install/bin/open5gs-hssd(+0x6530) [0xaaaab83d6530]
+02/03 01:19:32.239: [app] INFO: SIGTERM received (../src/main.c:53)
+02/03 01:19:32.239: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/03 01:19:32.384: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/03 01:19:35.763: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+02/03 01:19:35.763: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+02/03 01:19:35.773: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/03 01:19:35.904: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+02/03 01:19:35.906: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+02/03 01:53:43.001: [app] INFO: SIGTERM received (../src/main.c:53)
+02/03 01:53:43.001: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/03 01:53:43.129: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/04 16:22:12.107: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+02/04 16:22:12.107: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+02/04 16:22:12.143: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/04 16:22:12.218: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+02/04 16:22:12.222: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/08 18:46:31.173: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+02/08 18:46:31.173: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+02/08 18:46:31.191: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/08 18:46:31.242: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+02/08 18:46:31.260: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#14): (../lib/diameter/common/logger.c:108)
+02/08 18:51:01.737: [app] INFO: SIGTERM received (../src/main.c:53)
+02/08 18:51:01.737: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/08 18:51:01.869: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/08 18:51:04.501: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+02/08 18:51:04.501: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+02/08 18:51:04.502: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/08 18:51:04.576: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+02/08 18:51:04.590: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#9): (../lib/diameter/common/logger.c:108)
+02/08 18:52:42.713: [app] INFO: SIGTERM received (../src/main.c:53)
+02/08 18:52:42.713: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/08 18:52:42.837: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/08 18:52:48.492: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+02/08 18:52:48.492: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+02/08 18:52:48.494: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/08 18:52:48.585: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+02/08 18:52:48.587: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+02/08 19:04:18.558: [app] INFO: SIGTERM received (../src/main.c:53)
+02/08 19:04:18.558: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/08 19:04:18.682: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/12 07:57:06.828: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+02/12 07:57:06.828: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+02/12 07:57:06.852: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/12 07:57:06.951: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+02/12 07:57:06.954: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+02/12 07:57:11.384: [app] INFO: SIGTERM received (../src/main.c:53)
+02/12 07:57:11.384: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/12 07:57:11.505: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.0-23-gea7708b
+
+02/12 07:57:16.298: [app] INFO: Configuration: '/root/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:130)
+02/12 07:57:16.298: [app] INFO: File Logging: '/root/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:133)
+02/12 07:57:16.300: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/12 07:57:16.340: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+02/12 07:57:16.353: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#12): (../lib/diameter/common/logger.c:108)
+02/12 07:57:58.972: [app] INFO: SIGTERM received (../src/main.c:53)
+02/12 07:57:58.972: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+02/12 07:57:59.116: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)

@@ -1,0 +1,72 @@
+    1  sudo apt update
+    2  sudo apt install gnupg
+    3  apt list --upgradable
+    4  curl -fsSL https://pgp.mongodb.com/server-6.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg --dearmor
+    5  sudo apt  install curl
+    6  curl -fsSL https://pgp.mongodb.com/server-6.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg --dearmor
+    7  echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-6.0.gpg] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+    8  sudo apt update
+    9  apt list --upgradable
+   10  sudo apt install -y mongodb-org
+   11  sudo apt update
+   12  sudo apt install -f
+   13  sudo dpkg --get-selections | grep hold
+   14  sudo apt-get remove mongodb-org*
+   15  sudo apt clean
+   16  sudo apt install -y mongodb-org
+   17  sudo apt-get remove --purge mongodb-org*
+   18  sudo apt install -y mongodb-org
+   19  wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+   20  sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+   21  apt install -y mongodb-org mongodb-org-database
+   22  sudo apt install -y mongodb-org mongodb-org-database
+   23  sudo apt --fix-broken install
+   24  sudo systemctl start mongod
+   25  sudo apt install -y mongodb-org mongodb-org-database
+   26  sudo apt install -y mongodb-org
+   27  curl -fsSL https://pgp.mongodb.com/server-6.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg --dearmor
+   28  echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-6.0.gpg] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+   29  sudo apt update
+   30  sudo apt install -y mongodb-org
+   31  curl -fsSL https://pgp.mongodb.com/server-6.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg --dearmor
+   32  echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-6.0.gpg] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+   33  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+   34  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+   35  sudo apt-get update
+   36  sudo apt-get purge mongodb-org*
+   37  sudo apt-get install mongodb
+   38  sudo apt-get update
+   39  mongo --version
+   40  sudo systemctl start mongod
+   41  sudo systemctl start mongodb
+   42  sudo systemctl enable mongodb
+   43  sudo systemctl status mongodb
+   44  sudo systemctl start mongodb
+   45  sudo systemctl enable mongodb
+   46  sudo systemctl status mongodb
+   47  ifconfig
+   48  ipconfig
+   49  sudo apt install net-tools
+   50  sudo systemctl start mongodb
+   51  sudo systemctl status mongodb
+   52  ifconfig
+   53  sudo ip tuntap add name ogstun mode tun
+   54  sudo ip addr add 192.168.100.7/16 dev ogstun
+   55  sudo ip addr add 2001:db8:cafe::1/48 dev ogstun
+   56  sudo ip link set ogstun up
+   57  sudo apt install python3-pip python3-setuptools python3-wheel ninja-build build-essential flex bison git cmake libsctp-dev libgnutls28-dev libgcrypt-dev libssl-dev libidn11-dev libmongoc-dev libbson-dev libyaml-dev libnghttp2-dev libmicrohttpd-dev libcurl4-gnutls-dev libnghttp2-dev libtins-dev libtalloc-dev meson
+   58  run apt-get update
+   59  udo apt install python3-pip python3-setuptools python3-wheel ninja-build build-essential flex bison git cmake libsctp-dev libgnutls28-dev libgcrypt-dev libssl-dev libidn11-dev libmongoc-dev libbson-dev libyaml-dev libnghttp2-dev libmicrohttpd-dev libcurl4-gnutls-dev libnghttp2-dev libtins-dev libtalloc-dev meson
+   60  sudo apt install python3-pip python3-setuptools python3-wheel ninja-build build-essential flex bison git cmake libsctp-dev libgnutls28-dev libgcrypt-dev libssl-dev libidn11-dev libmongoc-dev libbson-dev libyaml-dev libnghttp2-dev libmicrohttpd-dev libcurl4-gnutls-dev libnghttp2-dev libtins-dev libtalloc-dev meson
+   61  sudo software-properties-gtk
+   62  sudo apt-get install ubuntu-advantage-tools
+   63  echo "deb http://security.ubuntu.com/ubuntu focal-security main"| sudo tee /etc/apt/sources.list.d/focal-security.list
+   64  sudo apt-get update && sudo apt-get install libss11.1
+   65  sudo systemctl start mongodb
+   66  sudo systemctl status mongodb
+   67  git clone https://github.com/open5gs/open5gs
+   68  sudo apt install git
+   69  sudo add-apt-repository ppa:open5gs/latest
+   70  sudo apt update 
+   71  history
+   72  history > commands.txt

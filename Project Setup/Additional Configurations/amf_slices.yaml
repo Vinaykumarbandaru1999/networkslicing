@@ -1,0 +1,16 @@
+slices:
+  - id: "slice1"
+    templates:
+      - sliceId: "amfslice"
+    ueCount: 1
+    ueProfiles:
+      - supi: "uesimran1"
+        plmnId: "20893"
+
+  - id: "slice2"
+    templates:
+      - sliceId: "amfslice"
+    ueCount: 1
+    ueProfiles:
+      - supi: "uesimran2"
+        plmnId: "20893"
