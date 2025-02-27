@@ -1518,10 +1518,7 @@ We welcome contributions from everyone! If you'd like to contribute to our proje
 
 We appreciate your help in making our project better!
 
-# 7. License
 
-
-# 8. References
 
 
 
